@@ -1,6 +1,11 @@
 # Gesture Digital Twin
 
+[![CI](https://github.com/manidharreddy0909/gesture-digital-twin/actions/workflows/ci.yml/badge.svg)](https://github.com/manidharreddy0909/gesture-digital-twin/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 MediaPipe-based hand tracking and gesture control system for cursor interaction, 3D manipulation, robot control, and Unreal Engine integration.
+
+This repository combines real-time hand landmark tracking, gesture recognition, motion smoothing, and downstream control pipelines for cursor control, robot targeting, and Unreal Engine skeletal interaction.
 
 ## Highlights
 
@@ -10,6 +15,12 @@ MediaPipe-based hand tracking and gesture control system for cursor interaction,
 - 3D transformation pipeline for AR/VR and robotics workflows
 - Modular integrations for Unreal Engine, sockets, HTTP APIs, and robot targets
 - Optional PyQt6 dashboard and profiling utilities
+
+## Status
+
+- Local integration validation: `10/10` tests passed via `python test_3d_pipeline.py`
+- CI workflow: runs on pushes and pull requests through GitHub Actions
+- Repository license: MIT
 
 ## Repository Structure
 
@@ -37,6 +48,8 @@ python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
 ```
+
+Optional GUI dependencies are already listed in `requirements.txt` and include `PyQt6` and `PyQt6-Charts`.
 
 ## Run
 
@@ -73,3 +86,4 @@ Current local result: `10/10` tests passed.
 - The MediaPipe model is stored at `models/hand_landmarker.task`.
 - Local virtual environments, caches, and scratch files are excluded from Git.
 - Extended project notes remain available in `README_ENHANCEMENTS.md`.
+- The test and runtime paths now consistently reference `models/hand_landmarker.task`.
