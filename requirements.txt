@@ -1,0 +1,12 @@
+# Core runtime dependencies
+numpy>=1.24,<3.0
+opencv-python>=4.8,<5.0
+mediapipe>=0.10.14
+websockets>=12,<16
+requests>=2.31,<3.0
+pyautogui>=0.9.54
+
+# Optional visualization / GUI
+matplotlib>=3.8,<4.0
+PyQt6>=6.6,<7.0
+PyQt6-Charts>=6.6,<7.0
