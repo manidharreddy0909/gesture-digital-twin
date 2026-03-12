@@ -15,7 +15,8 @@ MODEL_URL = (
     "https://storage.googleapis.com/mediapipe-models/"
     "hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task"
 )
-DEFAULT_MODEL_PATH = "hand_landmarker.task"
+MODULE_DIR = os.path.dirname(os.path.abspath(__file__))
+DEFAULT_MODEL_PATH = os.path.join(MODULE_DIR, "models", "hand_landmarker.task")
 
 def download_hand_landmarker_model(model_path: str = DEFAULT_MODEL_PATH) -> str:
     if os.path.exists(model_path):

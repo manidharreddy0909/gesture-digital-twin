@@ -201,7 +201,7 @@ c:\Gesture_Digital_Twin/
 ├── main_enhanced.py                   # NEW: Enhanced main with all features
 │
 ├── ENHANCEMENTS_DOCUMENTATION.py      # Comprehensive documentation
-├── hand_landmarker.task               # MediaPipe model (~7.8MB)
+├── models/hand_landmarker.task        # MediaPipe model (~7.8MB)
 └── models/                            # (Auto-created) Saved gesture models
     └── gestures/                      # ML model storage
 ```
